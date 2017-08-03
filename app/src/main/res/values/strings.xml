@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CommunityCommunicator</string>
+    <string name="report_btn">Report</string>
+    <string name="myreport_btn">My Reports</string>
+    <string name="center_map">Re-center Map</string>
+    <string name="toast_location_null">Failed to get location. GPS may be off</string>
+</resources>
