@@ -1,6 +1,9 @@
 package info.reportissues.communitycommunicator;
 
 import android.Manifest;
+import android.app.DialogFragment;
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -34,6 +37,7 @@ import com.google.gson.Gson;
 import java.util.ArrayList;
 import java.util.List;
 
+import info.reportissues.communitycommunicator.dialogs.LoginOrRegisterDialog;
 import info.reportissues.communitycommunicator.models.Issue;
 
 import static com.google.android.gms.location.LocationServices.getFusedLocationProviderClient;
@@ -83,6 +87,17 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 return;
             }
         }
+    }
+
+    public void checkForLogin(View view) {
+        DialogFragment dia = new LoginOrRegisterDialog();
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getFragmentManager().findFragmentByTag("dialog");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        dia.show(ft, "dialog");
     }
 
     public void currentLocation(View view) {

@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/map"
         android:layout_below="@+id/map"
+        android:onClick="checkForLogin"
         android:text="@string/report_btn" />
 
     <Button

@@ -4,4 +4,13 @@
     <string name="myreport_btn">My Reports</string>
     <string name="center_map">Re-center Map</string>
     <string name="toast_location_null">Failed to get location. GPS may be off</string>
+    <string name="login_or_register_title">Login or Register</string>
+    <string name="login_or_register_body">You are not logged in. Log in or register to continue.</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="cancel">Cancel</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
